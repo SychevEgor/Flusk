@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+Студенты
+{% endblock %}
+
+{% block content %}
+    <h1>Страница студентов</h1>
+
+    {% for student in students %}
+        <li> {{ student.name }} - {{ student.faculty }} </li>
+    {% endfor %}
+{% endblock %}
